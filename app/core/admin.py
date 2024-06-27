@@ -1,11 +1,11 @@
 from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin as BaseUserAdmin
-from models import User
+from .models import User
 
 
 class UserAdmin(BaseUserAdmin):
     ordering = ['id']
-    test_display = ['email', 'name']
+    list_display = ['email', 'name']
 
 
 admin.site.register(User, UserAdmin)
