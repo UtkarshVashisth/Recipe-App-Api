@@ -31,7 +31,7 @@ class AuthTokenSerializer(serializers.Serializer):
         trim_whitespace=False
     )
 
-    def validators(self, attrs):
+    def validate(self, attrs):
         email = attrs.get('email')
         password = attrs.get('password')
         user = authenticate(
