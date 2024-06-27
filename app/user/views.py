@@ -1,6 +1,6 @@
 from rest_framework import generics
 from rest_framework.authtoken.views import ObtainAuthToken
-from serializers import (UserSerializer,
+from user.serializers import (UserSerializer,
                          AuthTokenSerializer)
 from rest_framework.settings import api_settings
 
